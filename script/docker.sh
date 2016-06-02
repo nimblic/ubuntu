@@ -18,6 +18,12 @@ docker_package_install() {
     # Install Docker
     curl -sSL https://get.docker.com/ | sh
 
+
+    # Install Docker Compose
+    curl -L https://github.com/docker/compose/releases/download/1.7.1/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+    chmod +x /usr/local/bin/docker-compose
+
+
     # Enable memory and swap accounting
     sed -i 's/GRUB_CMDLINE_LINUX=""/GRUB_CMDLINE_LINUX="cgroup_enable=memory swapaccount=1"/' /etc/default/grub
     update-grub
