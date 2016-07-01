@@ -1,0 +1,136 @@
+==> vmware-iso: Provisioning with shell script: script/vmware.sh
+    vmware-iso: ==> Installing VMware Tools
+    vmware-iso: [sudo] password for nimblic: mount: /dev/loop0 is write-protected, mounting read-only
+    vmware-iso: ==> VMware Tools Path: /mnt/cdrom/VMwareTools-10.0.5-3228253.tar.gz
+    vmware-iso: ==> VMWare Tools Version: 10.0.5
+    vmware-iso: ==> VMware Tools Build: 3228253
+    vmware-iso: open-vm-tools are available from the OS vendor and VMware recommends using
+    vmware-iso: open-vm-tools. See http://kb.vmware.com/kb/2073803 for more information.
+    vmware-iso: Do you still want to proceed with this legacy installer? [yes]
+    vmware-iso: Creating a new VMware Tools installer database using the tar4 format.
+    vmware-iso:
+    vmware-iso: Installing VMware Tools.
+    vmware-iso:
+    vmware-iso: In which directory do you want to install the binary files?
+    vmware-iso: [/usr/bin]
+    vmware-iso: What is the directory that contains the init directories (rc0.d/ to rc6.d/)?
+    vmware-iso: [/etc]
+    vmware-iso: What is the directory that contains the init scripts?
+    vmware-iso: [/etc/init.d]
+    vmware-iso: In which directory do you want to install the daemon files?
+    vmware-iso: [/usr/sbin]
+    vmware-iso: In which directory do you want to install the library files?
+    vmware-iso: [/usr/lib/vmware-tools]
+    vmware-iso: The path "/usr/lib/vmware-tools" does not exist currently. This program is
+    vmware-iso: going to create it, including needed parent directories. Is this what you want?
+    vmware-iso: [yes]
+    vmware-iso: In which directory do you want to install the common agent library files?
+    vmware-iso: [/usr/lib]
+    vmware-iso: In which directory do you want to install the common agent transient files?
+    vmware-iso: [/var/lib]
+    vmware-iso: In which directory do you want to install the documentation files?
+    vmware-iso: [/usr/share/doc/vmware-tools]
+    vmware-iso: The path "/usr/share/doc/vmware-tools" does not exist currently. This program
+    vmware-iso: is going to create it, including needed parent directories. Is this what you
+    vmware-iso: want? [yes]
+    vmware-iso: The installation of VMware Tools 10.0.5 build-3228253 for Linux completed
+    vmware-iso: successfully. You can decide to remove this software from your system at any
+    vmware-iso: time by invoking the following command: "/usr/bin/vmware-uninstall-tools.pl".
+    vmware-iso:
+    vmware-iso: Before running VMware Tools for the first time, you need to configure it by
+    vmware-iso: invoking the following command: "/usr/bin/vmware-config-tools.pl". Do you want
+    vmware-iso: this program to invoke the command for you now? [yes]
+    vmware-iso: Initializing...
+    vmware-iso:
+    vmware-iso:
+    vmware-iso: Making sure services for VMware Tools are stopped.
+    vmware-iso:
+    vmware-iso: Stopping Thinprint services in the virtual machine:
+    vmware-iso: Stopping Virtual Printing daemon:                      done
+    vmware-iso: Stopping VMware Tools services in the virtual machine:
+    vmware-iso: Guest operating system daemon:                         done
+    vmware-iso: VMware User Agent (vmware-user):                       done
+    vmware-iso: Unmounting HGFS shares:                                done
+    vmware-iso: Guest filesystem driver:                               done
+    vmware-iso:
+    vmware-iso:
+    vmware-iso: update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
+    vmware-iso: insserv: Service cups has to be enabled to start service vmware-tools-thinprint
+    vmware-iso: insserv: exiting now!
+    vmware-iso: update-rc.d: error: insserv rejected the script header
+    vmware-iso: WARNING: The installer initially used the 'udpate-rc.d' to setup the
+    vmware-iso: vmware-tools service.  That command cannot be found.  Please re-install the
+    vmware-iso: 'sysv-rc' package.  This script will now attempt to manually setup the
+    vmware-iso: vmware-tools service.update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
+    vmware-iso: The module vmci has already been installed on this system by another installer
+    vmware-iso: or package and will not be modified by this installer.
+    vmware-iso:
+    vmware-iso: The module vsock has already been installed on this system by another installer
+    vmware-iso: or package and will not be modified by this installer.
+    vmware-iso:
+    vmware-iso: The module vmxnet3 has already been installed on this system by another
+    vmware-iso: installer or package and will not be modified by this installer.
+    vmware-iso:
+    vmware-iso: The module pvscsi has already been installed on this system by another
+    vmware-iso: installer or package and will not be modified by this installer.
+    vmware-iso:
+    vmware-iso: The module vmmemctl has already been installed on this system by another
+    vmware-iso: installer or package and will not be modified by this installer.
+    vmware-iso:
+    vmware-iso: The VMware Host-Guest Filesystem allows for shared folders between the host OS
+    vmware-iso: and the guest OS in a Fusion or Workstation virtual environment.  Do you wish
+    vmware-iso: to enable this feature? [yes]
+    vmware-iso: The vmxnet driver is no longer supported on kernels 3.3 and greater. Please
+    vmware-iso: upgrade to a newer virtual NIC. (e.g., vmxnet3 or e1000e)
+    vmware-iso:
+    vmware-iso: The vmblock enables dragging or copying files between host and guest in a
+    vmware-iso: Fusion or Workstation virtual environment.  Do you wish to enable this feature?
+    vmware-iso: [yes]
+    vmware-iso: VMware automatic kernel modules enables automatic building and installation of
+    vmware-iso: VMware kernel modules at boot that are not already present. This feature can
+    vmware-iso: be enabled/disabled by re-running vmware-config-tools.pl.
+    vmware-iso:
+    vmware-iso: Would you like to enable VMware automatic kernel modules?
+    vmware-iso: [no]
+    vmware-iso: Do you want to enable Guest Authentication (vgauth)? Enabling vgauth is needed
+    vmware-iso: if you want to enable Common Agent (caf). [yes]
+    vmware-iso: Do you want to enable Common Agent (caf)? [yes]
+    vmware-iso: No X install found.
+    vmware-iso:
+    vmware-iso: Creating a new initrd boot image for the kernel.
+    vmware-iso: update-initramfs: Generating /boot/initrd.img-4.4.0-21-generic
+    vmware-iso: W: plymouth: The plugin label.so is missing, the selected theme might not work as expected.
+    vmware-iso: W: plymouth: You might want to install the plymouth-themes and plymouth-label package to fix this.
+    vmware-iso: Generating the key and certificate files.
+    vmware-iso: Successfully generated the key and certificate files.
+    vmware-iso: Starting Virtual Printing daemon:                      done
+    vmware-iso: Checking acpi hot plug                                 done
+    vmware-iso: Starting VMware Tools services in the virtual machine:
+    vmware-iso: Switching to guest configuration:                      done
+    vmware-iso: Guest filesystem driver:                               done
+    vmware-iso: Mounting HGFS shares:                                  done
+    vmware-iso: Blocking file system:                                  done
+    vmware-iso: Guest operating system daemon:                         done
+    vmware-iso: VGAuthService:                                         done
+    vmware-iso: Common Agent:                                          done
+    vmware-iso: The configuration of VMware Tools 10.0.5 build-3228253 for Linux for this
+    vmware-iso: running kernel completed successfully.
+    vmware-iso:
+    vmware-iso: You must restart your X session before any mouse or graphics changes take
+    vmware-iso: effect.
+    vmware-iso:
+    vmware-iso: You can now run VMware Tools by invoking "/usr/bin/vmware-toolbox-cmd" from the
+    vmware-iso: command line.
+    vmware-iso:
+    vmware-iso: To enable advanced X features (e.g., guest resolution fit, drag and drop, and
+    vmware-iso: file and text copy/paste), you will need to do one (or more) of the following:
+    vmware-iso: 1. Manually start /usr/bin/vmware-user
+    vmware-iso: 2. Log out and log back into your desktop session; and,
+    vmware-iso: 3. Restart your X session.
+    vmware-iso:
+    vmware-iso: Enjoy,
+    vmware-iso:
+    vmware-iso: --the VMware team
+    vmware-iso:
+    vmware-iso: ==> Installed VMware Tools 10.0.5.520 (build-3228253)
+    vmware-iso: ==> Checking version of Ubuntu
